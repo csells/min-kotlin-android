@@ -18,4 +18,8 @@ android {
         minSdkVersion 14
         targetSdkVersion 27
     }
+    lintOptions {
+        // To un-suppress this warning, see https://developer.android.com/studio/write/app-link-indexing.html
+        disable 'GoogleAppIndexingWarning'
+    }
 }
